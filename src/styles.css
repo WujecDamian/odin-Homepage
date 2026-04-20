@@ -94,7 +94,7 @@ main {
   }
   .projects-box {
     display: grid;
-    grid-template: auto/repeat(auto-fill, 500px);
+    grid-template: auto/repeat(auto-fill, 600px);
     width: auto;
     gap: 2rem;
     place-content: center;
@@ -178,19 +178,23 @@ footer {
 }
 @media screen and (max-width: 1440px) {
   header {
+    .aboutMe--card {
+      display: block;
+    }
     .card--left {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-top: 5rem;
-      width: 80%;
+      float: left;
+      align-items: top;
+      justify-content: top;
       position: relative;
       .profile-picture {
-        width: 350px;
+        position: relative;
+        width: 250px;
+        max-width: none;
         transform-origin: bottom right;
         transform: none;
       }
       .profile-name {
+        float: left;
         display: inline;
         position: absolute;
         bottom: 0;
@@ -200,8 +204,18 @@ footer {
         color: white;
         font-size: 1.5vw;
       }
+      .card--paragraph,
+      .card--h1 {
+        float: left;
+      }
+    }
+    .card--right {
+      width: auto;
+      display: inline-flex;
+      float: left;
     }
   }
+
   main {
     .projects {
       display: flex;
@@ -235,12 +249,15 @@ footer {
   body {
   }
   header {
+    padding-top: 2rem;
+
     .aboutMe--card {
       display: flex;
       flex-direction: column;
       gap: 1rem;
       margin-inline: 2rem;
-      margin-block: 2rem;
+      margin-bottom: 2rem;
+      margin-top: 0rem;
       height: auto;
       background-color: rgb(231, 231, 231);
       padding: 1rem;
@@ -265,12 +282,13 @@ footer {
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-top: 5rem;
+      margin-top: 0rem;
       margin-inline: auto;
       position: relative;
+      padding-top: 0.5rem;
+
       .profile-picture {
-        width: 100%;
-        transform: scale(1.5);
+        min-width: 80vw;
         transform-origin: bottom;
         height: auto;
         aspect-ratio: 4/5;
@@ -280,14 +298,16 @@ footer {
         display: inline;
         position: absolute;
         bottom: 0;
-        transform: scale(2.4) translateY(-1.5rem);
+        transform: translateY(-1.5rem);
         text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
         transform-origin: top;
         color: white;
-        font-size: 4vw;
+        font-size: 15vw;
+        line-height: 15vw;
       }
     }
   }
+
   main {
     .projects {
       display: flex;
@@ -295,6 +315,12 @@ footer {
       place-content: center;
       width: 100%;
       margin: auto;
+    }
+    .projects--heading {
+      font-size: 3rem;
+      text-indent: 0;
+      text-align: center;
+      margin-bottom: 1.5rem;
     }
     .projects-box {
       display: grid;
@@ -308,12 +334,18 @@ footer {
   footer {
     position: relative;
     flex-direction: column;
+    padding-bottom: 0;
     width: 100%;
+    .footer--left {
+      padding: 0 2rem 0 2rem;
+      gap: 1rem;
+    }
+
     .profile-picture {
       width: 100%;
       height: auto;
       object-fit: cover;
-      object-position: 0px -150px;
+      object-position: 0px 0px;
     }
   }
   .icon {
