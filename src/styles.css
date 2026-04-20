@@ -69,12 +69,13 @@ header {
       display: inline;
       position: absolute;
       bottom: 0;
-      transform: scale(2.4, 1.6) translateY(1rem);
+      transform: scale(2.4) translateY(0.5rem) translateX(0.25rem);
       text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
       transform-origin: top;
       color: white;
-      font-size: 1rem;
+      font-size: 1vw;
       font-style: italic;
+      font-weight: 100;
       z-index: 1;
     }
   }
@@ -84,11 +85,12 @@ main {
     display: flex;
     flex-direction: column;
     place-content: center;
-    width: 80%;
+    width: 90%;
     margin: auto;
   }
   .projects--heading {
     font-size: 3rem;
+    text-indent: 10rem;
   }
   .projects-box {
     display: grid;
@@ -164,6 +166,12 @@ footer {
 .icon {
   width: 18px;
   height: auto;
+  cursor: pointer;
+  will-change: transform;
+  transition: transform 0.2s ease;
+}
+.icon:hover {
+  transform: scale(1.2);
 }
 .pcard--screenshot {
   width: fit-content;
