@@ -304,6 +304,7 @@ footer {
         display: inline;
         position: absolute;
         bottom: 0;
+        top: auto;
         transform: translateY(-1.5rem);
         text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
         transform-origin: top;
