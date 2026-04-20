@@ -194,9 +194,72 @@ footer {
       place-content: center;
     }
   }
+  .icon {
+    width: 20px;
+  }
+  footer {
+    .profile-picture {
+      margin: auto 0;
+      min-width: 300px;
+      object-position: 0px -100px;
+    }
+  }
 }
 @media screen and (max-width: 767px) {
   body {
+  }
+  header {
+    .aboutMe--card {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-inline: 2rem;
+      margin-block: 2rem;
+      height: auto;
+      background-color: rgb(231, 231, 231);
+      padding: 1rem;
+    }
+    .card--right {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      .card--h1 {
+        font-size: 2.25rem;
+      }
+      .card--links {
+        display: flex;
+        gap: 1rem;
+        align-self: center;
+        margin: 0 auto;
+      }
+    }
+    .card--left {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 5rem;
+      position: relative;
+      .profile-picture {
+        width: 80%;
+        transform: scale(1.5);
+        transform-origin: bottom;
+        height: auto;
+        aspect-ratio: 4/5;
+        object-fit: cover;
+      }
+      .profile-name {
+        display: inline;
+        position: absolute;
+        bottom: 0;
+        transform: scale(2.4) translateY(-1.5rem) translateX(0.25rem);
+        text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+        transform-origin: top;
+        color: white;
+        font-size: 4vw;
+      }
+    }
   }
   main {
     .projects {
@@ -225,5 +288,8 @@ footer {
       object-fit: cover;
       object-position: 0px -150px;
     }
+  }
+  .icon {
+    width: 24px;
   }
 }
