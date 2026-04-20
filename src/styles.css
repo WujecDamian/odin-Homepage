@@ -11,6 +11,8 @@ html {
 }
 body {
   background-color: rgb(214, 222, 230);
+  max-width: 2560px;
+  margin: 0 auto;
 }
 header {
   display: flex;
@@ -182,7 +184,7 @@ footer {
 @media screen and (max-width: 1440px) {
   header {
     .aboutMe--card {
-      display: block;
+      display: flex;
     }
     .card--left {
       float: left;
@@ -194,18 +196,18 @@ footer {
         width: 250px;
         max-width: none;
         transform-origin: bottom right;
-        transform: none;
+        transform: scale(1.3);
       }
       .profile-name {
         float: left;
         display: inline;
         position: absolute;
-        bottom: 0;
-        transform: scale(2.4) translateY(-13vw) translateX(6vw);
+        top: 0;
         text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+        transform: scale(3) translate(5rem, -30px);
         transform-origin: top;
         color: white;
-        font-size: 1.5vw;
+        font-size: 1rem;
       }
       .card--paragraph,
       .card--h1 {
@@ -294,6 +296,7 @@ footer {
         min-width: 80vw;
         transform-origin: bottom;
         height: auto;
+        transform: none;
         aspect-ratio: 4/5;
         object-fit: cover;
       }
