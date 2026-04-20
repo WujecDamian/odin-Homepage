@@ -176,3 +176,54 @@ footer {
 .pcard--screenshot {
   width: fit-content;
 }
+@media screen and (max-width: 1440px) {
+  main {
+    .projects {
+      display: flex;
+      flex-direction: column;
+      place-content: center;
+      width: 100%;
+      margin: auto;
+    }
+    .projects-box {
+      display: grid;
+      grid-template: auto/1fr 1fr;
+      margin-inline: 3rem;
+      width: auto;
+      gap: 2rem;
+      place-content: center;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  body {
+  }
+  main {
+    .projects {
+      display: flex;
+      flex-direction: column;
+      place-content: center;
+      width: 100%;
+      margin: auto;
+    }
+    .projects-box {
+      display: grid;
+      grid-template: auto/1fr;
+      margin-inline: 3rem;
+      width: auto;
+      gap: 2rem;
+      place-content: center;
+    }
+  }
+  footer {
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    .profile-picture {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      object-position: 0px -150px;
+    }
+  }
+}
