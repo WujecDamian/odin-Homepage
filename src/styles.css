@@ -266,10 +266,10 @@ footer {
       align-items: center;
       justify-content: center;
       margin-top: 5rem;
+      margin-inline: auto;
       position: relative;
       .profile-picture {
         width: 80%;
-        transform: scale(1.5);
         transform-origin: bottom;
         height: auto;
         aspect-ratio: 4/5;
