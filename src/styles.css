@@ -201,7 +201,8 @@ footer {
     .profile-picture {
       margin: auto 0;
       min-width: 300px;
-      object-position: 0px -100px;
+      aspect-ratio: 10/16;
+      object-position: 0px 0px;
     }
   }
 }
