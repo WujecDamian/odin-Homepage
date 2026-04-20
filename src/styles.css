@@ -177,6 +177,31 @@ footer {
   width: fit-content;
 }
 @media screen and (max-width: 1440px) {
+  header {
+    .card--left {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 5rem;
+      width: 80%;
+      position: relative;
+      .profile-picture {
+        width: 350px;
+        transform-origin: bottom right;
+        transform: none;
+      }
+      .profile-name {
+        display: inline;
+        position: absolute;
+        bottom: 0;
+        transform: scale(2.4) translateY(-13vw) translateX(6vw);
+        text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+        transform-origin: top;
+        color: white;
+        font-size: 1.5vw;
+      }
+    }
+  }
   main {
     .projects {
       display: flex;
